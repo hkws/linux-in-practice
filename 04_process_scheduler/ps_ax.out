@@ -1,0 +1,96 @@
+  R: 実行中or実行待ち、S or D:スリープ、Z:ゾンビ
+  PID TTY      STAT   TIME COMMAND
+    1 ?        Ss     0:01 /sbin/init
+    2 ?        S      0:00 [kthreadd]
+    3 ?        S      0:00 [ksoftirqd/0]
+    5 ?        S<     0:00 [kworker/0:0H]
+    6 ?        S      0:00 [kworker/u2:0]
+    7 ?        S      0:00 [rcu_sched]
+    8 ?        S      0:00 [rcu_bh]
+    9 ?        S      0:00 [migration/0]
+   10 ?        S      0:00 [watchdog/0]
+   11 ?        S      0:00 [kdevtmpfs]
+   12 ?        S<     0:00 [netns]
+   13 ?        S<     0:00 [perf]
+   14 ?        S      0:00 [khungtaskd]
+   15 ?        S<     0:00 [writeback]
+   16 ?        SN     0:00 [ksmd]
+   17 ?        SN     0:00 [khugepaged]
+   18 ?        S<     0:00 [crypto]
+   19 ?        S<     0:00 [kintegrityd]
+   20 ?        S<     0:00 [bioset]
+   21 ?        S<     0:00 [kblockd]
+   22 ?        S<     0:00 [ata_sff]
+   23 ?        S<     0:00 [md]
+   24 ?        S<     0:00 [devfreq_wq]
+   28 ?        S      0:00 [kswapd0]
+   29 ?        S<     0:00 [vmstat]
+   30 ?        S      0:00 [fsnotify_mark]
+   31 ?        S      0:00 [ecryptfs-kthrea]
+   47 ?        S<     0:00 [kthrotld]
+   48 ?        S<     0:00 [acpi_thermal_pm]
+   49 ?        S<     0:00 [bioset]
+   50 ?        S<     0:00 [bioset]
+   51 ?        S<     0:00 [bioset]
+   52 ?        S<     0:00 [bioset]
+   53 ?        S<     0:00 [bioset]
+   54 ?        S<     0:00 [bioset]
+   55 ?        S<     0:00 [bioset]
+   56 ?        S<     0:00 [bioset]
+   57 ?        S      0:00 [scsi_eh_0]
+   58 ?        S<     0:00 [scsi_tmf_0]
+   59 ?        S      0:00 [scsi_eh_1]
+   60 ?        S<     0:00 [scsi_tmf_1]
+   62 ?        S      0:00 [kworker/u2:3]
+   66 ?        S<     0:00 [ipv6_addrconf]
+   79 ?        S<     0:00 [deferwq]
+   80 ?        S<     0:00 [charger_manager]
+   81 ?        S<     0:00 [bioset]
+  118 ?        S      0:00 [kworker/0:2]
+  120 ?        S      0:00 [kworker/0:3]
+  122 ?        S<     0:00 [kpsmoused]
+  123 ?        S      0:00 [scsi_eh_2]
+  124 ?        S<     0:00 [scsi_tmf_2]
+  125 ?        S<     0:00 [kworker/0:1H]
+  154 ?        S<     0:00 [bioset]
+  226 ?        S<     0:00 [raid5wq]
+  253 ?        S<     0:00 [bioset]
+  285 ?        S      0:00 [jbd2/sda1-8]
+  286 ?        S<     0:00 [ext4-rsv-conver]
+  354 ?        Ss     0:00 /lib/systemd/systemd-journald
+  358 ?        S<     0:00 [iscsi_eh]
+  366 ?        S      0:00 [kauditd]
+  381 ?        S<     0:00 [ib_addr]
+  384 ?        Ss     0:00 /sbin/lvmetad -f
+  398 ?        S<     0:00 [ib_mcast]
+  400 ?        S<     0:00 [ib_nl_sa_wq]
+  402 ?        S<     0:00 [ib_cm]
+  406 ?        S<     0:00 [iw_cm_wq]
+  410 ?        S<     0:00 [rdma_cm]
+  413 ?        Ss     0:00 /lib/systemd/systemd-udevd
+  470 ?        Ssl    0:00 /lib/systemd/systemd-timesyncd
+  585 ?        S<     0:00 [iprt-VBoxWQueue]
+  731 ?        Ss     0:00 /sbin/dhclient -1 -v -pf /run/dhclient.enp0s3.pid -lf /var/lib/dhcp/dhclient.enp0s3.leases -I -df /var/lib/dhcp/dhclient6.enp0s3.leases enp0s3
+  769 ?        Ssl    0:00 /usr/lib/accountsservice/accounts-daemon
+  779 ?        Ssl    0:00 /usr/sbin/rsyslogd -n
+  786 ?        Ss     0:00 /usr/sbin/atd -f
+  798 ?        Ss     0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation
+  810 ?        Ss     0:00 /lib/systemd/systemd-logind
+  812 ?        Ss     0:00 /usr/sbin/acpid
+  816 ?        Ssl    0:00 /usr/bin/lxcfs /var/lib/lxcfs/
+  820 ?        Ss     0:00 /usr/sbin/cron -f
+  823 ?        Ssl    0:00 /usr/lib/snapd/snapd
+  845 ?        Ss     0:00 /sbin/mdadm --monitor --pid-file /run/mdadm/monitor.pid --daemonise --scan --syslog
+  857 ?        Ssl    0:00 /usr/lib/policykit-1/polkitd --no-debug
+  869 ?        S<     0:00 [ttm_swap]
+  983 ?        Ss     0:00 /sbin/iscsid
+  984 ?        S<Ls   0:00 /sbin/iscsid
+ 1001 ?        Ss     0:00 /usr/sbin/sshd -D
+ 1068 tty1     Ss+    0:00 /sbin/agetty --noclear tty1 linux
+ 1166 ?        Ss     0:00 sshd: kawase [priv]
+ 1168 ?        Ss     0:00 /lib/systemd/systemd --user
+ 1170 ?        S      0:00 (sd-pam)
+ 1229 ?        S      0:01 sshd: kawase@pts/0
+ 1230 pts/0    Ss     0:00 -bash
+ 1314 ?        S      0:00 [kworker/0:0]
+ 1325 pts/0    R+     0:00 ps -ax

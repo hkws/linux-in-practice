@@ -1,0 +1,5 @@
+kawase@ubuntu:~/linux-in-practice/04_process_scheduler$ time sleep 10 > sleep_time.out >> sleep_time.out
+
+real    0m10.011s    # 経過時間：プロセスの開始から終了までの現実での時間
+user    0m0.000s     # CPU時間：プロセスが実際に論理CPUを使用した時間。sleepではプロセスを使用しないため0になっている。
+sys    0m0.000s

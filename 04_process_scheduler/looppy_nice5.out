@@ -1,0 +1,11 @@
+Linux 4.4.0-142-generic (ubuntu) 	2019年06月18日 	_x86_64_	(1 CPU)
+# システムコールniceと同等なshell commandとして nice -n <優先度> <実行コマンド> が使える
+# 優先度をdefaultの0以外にした場合、sarの%niceでCPUを利用した時間の割合を取得できる
+# 優先度0のときは%userがCPUを利用した時間の割合になる
+00時36分38秒     CPU     %user     %nice   %system   %iowait    %steal     %idle
+00時36分39秒     all     74.70     25.30      0.00      0.00      0.00      0.00
+00時36分39秒       0     74.70     25.30      0.00      0.00      0.00      0.00
+
+平均値:      CPU     %user     %nice   %system   %iowait    %steal     %idle
+平均値:      all     74.70     25.30      0.00      0.00      0.00      0.00
+平均値:        0     74.70     25.30      0.00      0.00      0.00      0.00

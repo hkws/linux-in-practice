@@ -1,0 +1,7 @@
+estimating workload which takes just one milisecond
+end estimation
+0	11525	100
+
+real    0m14.210s # 経過時間：プロセスの開始から終了まで
+user    0m14.180s # 使用時間：プロセスがCPUを使った時間（実行待ち状態やスリープ状態のときの時間は含まれない）
+sys    0m0.016s
