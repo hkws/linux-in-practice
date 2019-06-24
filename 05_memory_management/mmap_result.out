@@ -1,0 +1,43 @@
+*** memory map before memory allocation ***
+00400000-00401000 r-xp 00000000 08:01 274960                             /home/kawase/linux-in-practice/05_memory_management/mmap
+00600000-00601000 r--p 00000000 08:01 274960                             /home/kawase/linux-in-practice/05_memory_management/mmap
+00601000-00602000 rw-p 00001000 08:01 274960                             /home/kawase/linux-in-practice/05_memory_management/mmap
+022a6000-022c8000 rw-p 00000000 00:00 0                                  [heap]
+7f29be44c000-7f29be60c000 r-xp 00000000 08:01 260088                     /lib/x86_64-linux-gnu/libc-2.23.so
+7f29be60c000-7f29be80c000 ---p 001c0000 08:01 260088                     /lib/x86_64-linux-gnu/libc-2.23.so
+7f29be80c000-7f29be810000 r--p 001c0000 08:01 260088                     /lib/x86_64-linux-gnu/libc-2.23.so
+7f29be810000-7f29be812000 rw-p 001c4000 08:01 260088                     /lib/x86_64-linux-gnu/libc-2.23.so
+7f29be812000-7f29be816000 rw-p 00000000 00:00 0 
+7f29be816000-7f29be83c000 r-xp 00000000 08:01 260064                     /lib/x86_64-linux-gnu/ld-2.23.so
+7f29bea32000-7f29bea35000 rw-p 00000000 00:00 0 
+7f29bea3b000-7f29bea3c000 r--p 00025000 08:01 260064                     /lib/x86_64-linux-gnu/ld-2.23.so
+7f29bea3c000-7f29bea3d000 rw-p 00026000 08:01 260064                     /lib/x86_64-linux-gnu/ld-2.23.so
+7f29bea3d000-7f29bea3e000 rw-p 00000000 00:00 0 
+7fff02e28000-7fff02e49000 rw-p 00000000 00:00 0                          [stack]
+7fff02ec5000-7fff02ec8000 r--p 00000000 00:00 0                          [vvar]
+7fff02ec8000-7fff02eca000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+
+*** succeeded to allocate memory: address = 0x7f29b804c000; size = 0x6400000 ***
+
+*** memory map after memory allocation ***
+00400000-00401000 r-xp 00000000 08:01 274960                             /home/kawase/linux-in-practice/05_memory_management/mmap
+00600000-00601000 r--p 00000000 08:01 274960                             /home/kawase/linux-in-practice/05_memory_management/mmap
+00601000-00602000 rw-p 00001000 08:01 274960                             /home/kawase/linux-in-practice/05_memory_management/mmap
+022a6000-022c8000 rw-p 00000000 00:00 0                                  [heap]
+7f29b804c000-7f29be44c000 rw-p 00000000 00:00 0 
+7f29be44c000-7f29be60c000 r-xp 00000000 08:01 260088                     /lib/x86_64-linux-gnu/libc-2.23.so
+7f29be60c000-7f29be80c000 ---p 001c0000 08:01 260088                     /lib/x86_64-linux-gnu/libc-2.23.so
+7f29be80c000-7f29be810000 r--p 001c0000 08:01 260088                     /lib/x86_64-linux-gnu/libc-2.23.so
+7f29be810000-7f29be812000 rw-p 001c4000 08:01 260088                     /lib/x86_64-linux-gnu/libc-2.23.so
+7f29be812000-7f29be816000 rw-p 00000000 00:00 0 
+7f29be816000-7f29be83c000 r-xp 00000000 08:01 260064                     /lib/x86_64-linux-gnu/ld-2.23.so
+7f29bea32000-7f29bea35000 rw-p 00000000 00:00 0 
+7f29bea3b000-7f29bea3c000 r--p 00025000 08:01 260064                     /lib/x86_64-linux-gnu/ld-2.23.so
+7f29bea3c000-7f29bea3d000 rw-p 00026000 08:01 260064                     /lib/x86_64-linux-gnu/ld-2.23.so
+7f29bea3d000-7f29bea3e000 rw-p 00000000 00:00 0 
+7fff02e28000-7fff02e49000 rw-p 00000000 00:00 0                          [stack]
+7fff02ec5000-7fff02ec8000 r--p 00000000 00:00 0                          [vvar]
+7fff02ec8000-7fff02eca000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+diff: -104857600
