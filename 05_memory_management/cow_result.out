@@ -1,0 +1,16 @@
+*** free memory info before fork ***:
+              total        used        free      shared  buff/cache   available
+Mem:        1015900      152436      392768        3200      470696      709280
+Swap:        998396           0      998396
+*** child ps info before memory access ***:
+ 1493 cow             106764 102480    23      0
+*** free memory info before memory access ***:
+              total        used        free      shared  buff/cache   available
+Mem:        1015900      152640      392564        3200      470696      709076
+Swap:        998396           0      998396
+*** child ps info after memory access ***:
+ 1493 cow             106764 103296 25631      0
+*** free memory info after memory access ***:
+              total        used        free      shared  buff/cache   available
+Mem:        1015900      255048      290156        3200      470696      606668
+Swap:        998396           0      998396
